@@ -1,0 +1,7 @@
+# AI Chatbot for College Enquiries - Project Dependencies
+# Suitable for Python 3.8 to 3.12
+
+Flask>=3.0.0
+scikit-learn>=1.3.0
+numpy>=1.24.0
+

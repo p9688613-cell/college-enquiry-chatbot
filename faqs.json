@@ -1,0 +1,69 @@
+[
+  {
+    "category": "Admissions",
+    "question": "What is the admission procedure for BCA?",
+    "answer": "Candidates must fill out the online application form on our website or submit the physical form at the admissions counter. Admission is based on 10+2 merit scores.",
+    "keywords": "admission procedure apply bca process"
+  },
+  {
+    "category": "Eligibility",
+    "question": "What is the eligibility requirement for BCA?",
+    "answer": "Minimum 50% marks in 10+2 from a recognized board (45% for SC/ST candidates) with Mathematics or Computer Science preferred.",
+    "keywords": "eligibility criteria bca percentage requirements"
+  },
+  {
+    "category": "Courses",
+    "question": "What courses are available in the college?",
+    "answer": "We offer BCA, B.Sc Computer Science, BBA, B.Com, MCA, and M.Sc IT programs.",
+    "keywords": "courses programs degree bca bsc bba mca"
+  },
+  {
+    "category": "Fees",
+    "question": "What is the annual fee for BCA?",
+    "answer": "The annual tuition fee for BCA is Rs. 45,000 per year, payable in two equal semester installments.",
+    "keywords": "fees bca tuition installment annual cost"
+  },
+  {
+    "category": "Scholarships",
+    "question": "Does the college offer scholarships?",
+    "answer": "Yes, merit-based fee concessions of up to 25% for >85% in 12th board exams, along with government SC/ST/OBC post-matric scholarships.",
+    "keywords": "scholarship financial aid concession merit"
+  },
+  {
+    "category": "Timings",
+    "question": "What are the college and office timings?",
+    "answer": "Lectures run Monday to Friday from 9:00 AM to 4:00 PM. The administrative office is open Mon-Sat 9:30 AM to 4:30 PM (closed on 2nd and 4th Saturdays).",
+    "keywords": "timings college hours office time schedule"
+  },
+  {
+    "category": "Examinations",
+    "question": "When are semester exams conducted?",
+    "answer": "Odd semester exams are conducted in Nov-Dec, and even semester exams take place in April-May. Hall tickets are released 10 days prior.",
+    "keywords": "exams semester examination timetable admit card hall ticket"
+  },
+  {
+    "category": "Documents",
+    "question": "Which documents are required at the time of admission?",
+    "answer": "10th and 12th marksheets, Transfer Certificate, Migration Certificate, Character Certificate, 4 passport photos, and Aadhar Card copy.",
+    "keywords": "documents certificates tc migration checklist"
+  },
+  {
+    "category": "Hostel",
+    "question": "Are hostel facilities available on campus?",
+    "answer": "Yes, separate hostels for boys and girls with Wi-Fi, RO water, security, and mess food. Total fee is Rs. 65,000 per year.",
+    "keywords": "hostel accommodation boys girls mess food rooms"
+  },
+  {
+    "category": "Placements",
+    "question": "What is the college placement record?",
+    "answer": "Over 85% placement rate with top companies like TCS, Infosys, Wipro, and Tech Mahindra. Average package is Rs. 3.5 - 4.2 LPA.",
+    "keywords": "placements job campus interview package salary companies"
+  },
+  {
+    "category": "Contact",
+    "question": "How can I contact the college admission cell?",
+    "answer": "Call +91 98765 43210 or email admissions@apexinstitute.edu.in. The campus is located at Knowledge Park, Sector 4, City.",
+    "keywords": "contact phone email address location helpline"
+  }
+]
+

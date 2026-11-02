@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot - College Enquiry Portal</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="chat-wrapper">
+        <!-- Main Chat Card -->
+        <main class="chat-card">
+            <!-- Header Section -->
+            <header class="chat-header">
+                <div class="college-branding">
+                    <div class="college-logo">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="college-info">
+                        <h1>Apex Institute of Technology</h1>
+                        <p class="subtitle">AI College Enquiry Assistant</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <span class="status-indicator">
+                        <span class="pulsing-dot"></span> Online
+                    </span>
+                    <a href="/admin" class="admin-badge-link" title="Open Admin Portal" target="_blank">
+                        <i class="fa-solid fa-gear"></i> Admin
+                    </a>
+                </div>
+            </header>
+
+            <!-- Quick Suggestion Bar -->
+            <section class="quick-topics-bar" aria-label="Suggested topics">
+                <span class="quick-label"><i class="fa-solid fa-bolt"></i> Quick Topics:</span>
+                <div class="topic-chips" id="quickTopics">
+                    <button type="button" class="topic-chip" data-query="What courses are offered?">Courses</button>
+                    <button type="button" class="topic-chip" data-query="How to apply for admission?">Admissions</button>
+                    <button type="button" class="topic-chip" data-query="What is the fee structure for BCA?">BCA Fees</button>
+                    <button type="button" class="topic-chip" data-query="Are hostel facilities available?">Hostel</button>
+                    <button type="button" class="topic-chip" data-query="What are the college timings?">Timings</button>
+                    <button type="button" class="topic-chip" data-query="What documents are needed for admission?">Documents</button>
+                    <button type="button" class="topic-chip" data-query="How to contact the college?">Contact</button>
+                </div>
+            </section>
+
+            <!-- Chat Messages Container -->
+            <section class="chat-messages" id="chatMessages" role="log" aria-live="polite">
+                <!-- Welcome Message from Bot -->
+                <div class="message-row bot-row">
+                    <div class="avatar bot-avatar">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-bubble bot-bubble">
+                            <p><strong>Hello! 👋 Welcome to the Apex Institute Virtual Help Desk.</strong></p>
+                            <p>I can help answer your questions regarding admissions, courses, fees, scholarships, exams, hostels, library facilities, and contact details. How can I help you today?</p>
+                        </div>
+                        <div class="interactive-suggestions">
+                            <button type="button" class="suggestion-btn" data-query="What courses are offered?">Courses Offered</button>
+                            <button type="button" class="suggestion-btn" data-query="What is the admission procedure?">Admission Process</button>
+                            <button type="button" class="suggestion-btn" data-query="What is the fee for BCA?">Fee Structure</button>
+                            <button type="button" class="suggestion-btn" data-query="What is the college helpline number?">Contact Us</button>
+                        </div>
+                        <span class="timestamp" id="initialTimestamp">Just now</span>
+                    </div>
+                </div>
+
+                <!-- Typing / Loading Indicator (Hidden by default) -->
+                <div class="message-row bot-row typing-row" id="typingIndicator" style="display: none;">
+                    <div class="avatar bot-avatar">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-bubble bot-bubble typing-bubble">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Input Area Footer -->
+            <footer class="chat-footer">
+                <form id="chatForm" class="input-form" onsubmit="return false;">
+                    <button type="button" id="clearChatBtn" class="action-btn" title="Clear Chat History">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                    <button type="button" id="ttsToggleBtn" class="action-btn" title="Toggle Voice Speech Output">
+                        <i class="fa-solid fa-volume-high"></i>
+                    </button>
+                    <div class="input-container">
+                        <input 
+                            type="text" 
+                            id="userInput" 
+                            placeholder="Type your college enquiry here... (e.g. BCA admission procedure)" 
+                            autocomplete="off" 
+                            maxlength="250"
+                            required
+                        >
+                        <button type="button" id="voiceInputBtn" class="mic-btn" title="Speak Query (Voice Recognition)">
+                            <i class="fa-solid fa-microphone"></i>
+                        </button>
+                    </div>
+                    <button type="submit" id="sendBtn" class="send-btn" title="Send message">
+                        <span>Send</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </footer>
+        </main>
+    </div>
+
+    <!-- JavaScript Application -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
+

@@ -1,0 +1,293 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "is anyone there",
+        "start chat",
+        "hey there",
+        "namaste"
+      ],
+      "responses": [
+        "Hello! Welcome to the College Enquiry Portal. How can I assist you with your academic and campus enquiries today?",
+        "Hi there! Welcome to our College Help Desk. Feel free to ask about admissions, courses, fees, exams, or hostel facilities."
+      ],
+      "suggestions": ["Admission Process", "Courses Offered", "Fee Structure", "Contact Details"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you later",
+        "talk to you later",
+        "exit",
+        "quit",
+        "close",
+        "have a good day"
+      ],
+      "responses": [
+        "Thank you for contacting the College Help Desk! Have a wonderful day ahead and best wishes for your academic journey.",
+        "Goodbye! If you have further queries, feel free to visit us again or contact the administrative office."
+      ],
+      "suggestions": ["Start New Chat", "College Website", "Admission Office Contact"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "that was helpful",
+        "thank you so much",
+        "thanks for the info",
+        "great help",
+        "appreciated"
+      ],
+      "responses": [
+        "You're very welcome! I'm glad I could help. Let me know if you need anything else.",
+        "Happy to help! Do you have any other questions regarding college admissions or facilities?"
+      ],
+      "suggestions": ["Hostel Facilities", "Scholarship Information", "Campus Tour"]
+    },
+    {
+      "tag": "admissions",
+      "patterns": [
+        "how to apply for admission",
+        "admission process",
+        "admission procedure",
+        "when do admissions start",
+        "last date for admission",
+        "admission form",
+        "how can i take admission",
+        "online admission application",
+        "admission guidelines"
+      ],
+      "responses": [
+        "Admissions for the upcoming academic session are currently open! You can apply online through the official college admission portal or collect the physical application form from the college administrative block (Counter 3) between 10:00 AM and 4:00 PM."
+      ],
+      "suggestions": ["Required Documents", "Eligibility Criteria", "Fee Structure", "Courses Offered"]
+    },
+    {
+      "tag": "eligibility",
+      "patterns": [
+        "eligibility criteria",
+        "who is eligible for bca",
+        "minimum percentage required",
+        "eligibility for admission",
+        "cutoff percentage",
+        "can arts student do bca",
+        "12th marks needed for admission"
+      ],
+      "responses": [
+        "General Eligibility Criteria:\n- BCA / B.Sc: Minimum 50% aggregate in 10+2 (Higher Secondary) with Mathematics or Computer Science preferred from a recognized board (45% for reserved categories).\n- B.Com / BBA: Minimum 45% aggregate in 10+2 in any stream.\n- Merit lists are published based on qualifying 12th board examinations."
+      ],
+      "suggestions": ["Admission Process", "Courses Offered", "Required Documents"]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "what courses are offered",
+        "list of courses",
+        "available programs",
+        "degree programs",
+        "tell me about bca course",
+        "which streams are available",
+        "undergraduate programs",
+        "postgraduate programs",
+        "bca syllabus"
+      ],
+      "responses": [
+        "Our college offers the following programs:\n1. Under-Graduate (UG):\n   - Bachelor of Computer Applications (BCA) - 3 Years\n   - B.Sc. (Computer Science, IT, Mathematics) - 3 Years\n   - Bachelor of Business Administration (BBA) - 3 Years\n   - B.Com (General / Computer Applications) - 3 Years\n2. Post-Graduate (PG):\n   - Master of Computer Applications (MCA) - 2 Years\n   - M.Sc. (Information Technology) - 2 Years"
+      ],
+      "suggestions": ["Fee Structure", "Eligibility Criteria", "Admission Process", "Placement Details"]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "fee structure",
+        "what is the course fee",
+        "how much is bca fee",
+        "annual fees",
+        "semester fee",
+        "fee payment modes",
+        "can i pay fees in installments",
+        "tuition fee details"
+      ],
+      "responses": [
+        "Fee Structure Summary (Annual):\n- BCA: Rs. 45,000 per year (payable in 2 semester installments of Rs. 22,500).\n- BBA: Rs. 40,000 per year.\n- B.Sc: Rs. 35,000 per year.\n- B.Com: Rs. 30,000 per year.\nFees can be paid online via Net Banking/UPI/Debit Card or through demand draft at the accounts counter."
+      ],
+      "suggestions": ["Scholarship Schemes", "Hostel Fees", "Admission Process"]
+    },
+    {
+      "tag": "scholarships",
+      "patterns": [
+        "is scholarship available",
+        "scholarship schemes",
+        "financial aid",
+        "merit scholarship",
+        "government scholarships",
+        "fee concession",
+        "scholarship for sc st obc"
+      ],
+      "responses": [
+        "Yes, our college provides multiple scholarship opportunities:\n1. Merit Scholarship: Up to 25% tuition fee waiver for students scoring above 85% in 10+2.\n2. State & Central Government Post-Matric Scholarships for SC/ST/OBC and minority students.\n3. Sports Quota & Single Girl Child Scholarship.\nPlease visit the Scholarship Desk in Room 102 with your income certificate and mark sheets to apply."
+      ],
+      "suggestions": ["Fee Structure", "Required Documents", "Contact Information"]
+    },
+    {
+      "tag": "timings",
+      "patterns": [
+        "college timings",
+        "what time does college open",
+        "class timings",
+        "office hours",
+        "working days",
+        "is college open on saturday",
+        "visiting hours"
+      ],
+      "responses": [
+        "College Schedule & Working Hours:\n- Regular Classes: Monday to Friday, 9:00 AM to 4:00 PM.\n- Administrative Office: Monday to Saturday, 9:30 AM to 4:30 PM (Closed on 2nd and 4th Saturdays and public holidays).\n- College Library: 8:30 AM to 5:30 PM."
+      ],
+      "suggestions": ["Library Timings", "Contact Details", "Admission Process"]
+    },
+    {
+      "tag": "examinations",
+      "patterns": [
+        "when are semester exams",
+        "examination schedule",
+        "exam timetable",
+        "admit card download",
+        "hall ticket",
+        "internal assessment dates",
+        "exam rules"
+      ],
+      "responses": [
+        "Examination Information:\n- Odd Semester Exams (Sem I, III, V) are typically conducted in November - December.\n- Even Semester Exams (Sem II, IV, VI) are held in April - May.\n- Internal Assessments (CIE) are conducted twice per semester.\n- Hall tickets/Admit cards are issued through the student portal 10 days before semester exams."
+      ],
+      "suggestions": ["Results Information", "College Timings", "Contact Office"]
+    },
+    {
+      "tag": "results",
+      "patterns": [
+        "when will exam results be declared",
+        "how to check results",
+        "result portal",
+        "revaluation procedure",
+        "grade card",
+        "marksheet collection"
+      ],
+      "responses": [
+        "Exam results are announced within 4 to 6 weeks after exam completion on the official student portal (results section). Enter your Roll Number/University Registration Number to view grades. Revaluation applications must be submitted within 10 days of result announcement."
+      ],
+      "suggestions": ["Examination Schedule", "Contact Details"]
+    },
+    {
+      "tag": "documents",
+      "patterns": [
+        "documents required for admission",
+        "what documents should i bring",
+        "admission document checklist",
+        "certificates needed",
+        "original certificates verification",
+        "transfer certificate",
+        "migration certificate"
+      ],
+      "responses": [
+        "Mandatory Documents for Admission Verification:\n1. 10th (Secondary) Marksheet and Passing Certificate.\n2. 12th (Higher Secondary) Marksheet and Passing Certificate.\n3. School/College Transfer Certificate (TC).\n4. Migration Certificate (for non-state/CBSE/ICSE boards).\n5. Character Certificate from the previous institution.\n6. 4 passport-size photographs.\n7. Caste/Category Certificate (if applicable).\n8. Aadhar Card copy for identity and address proof."
+      ],
+      "suggestions": ["Admission Process", "Eligibility Criteria", "Fee Structure"]
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "tell me about library",
+        "library facilities",
+        "library timings",
+        "how many books can i borrow",
+        "is digital library available",
+        "e-books and journals",
+        "reading room"
+      ],
+      "responses": [
+        "The Central Library features over 35,000 books, international research journals, magazines, and e-learning resources. Key highlights:\n- Timings: 8:30 AM to 5:30 PM (Extended till 7:00 PM during exam weeks).\n- Book Quota: 3 books for UG students for a period of 14 days.\n- High-speed Wi-Fi and 40-system Digital Library lab with DELNET and IEEE access."
+      ],
+      "suggestions": ["College Timings", "Hostel Facilities", "Campus Tour"]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "hostel facilities",
+        "is hostel available",
+        "hostel fee",
+        "boys hostel",
+        "girls hostel",
+        "mess food",
+        "hostel curfew timings",
+        "room facilities"
+      ],
+      "responses": [
+        "Hostel Accommodations:\n- Separate, secure hostels for boys and girls inside the campus.\n- Facilities: Furnished 2-seater and 3-seater rooms, 24/7 security, high-speed Wi-Fi, hygienic mess providing 3 meals + evening tea, RO water, and solar water heaters.\n- Hostel Fees: Rs. 65,000 per academic year (including food and lodging).\n- Hostel Curfew: 7:30 PM for safety."
+      ],
+      "suggestions": ["Fee Structure", "Contact Details", "Admission Process"]
+    },
+    {
+      "tag": "placements",
+      "patterns": [
+        "placement record",
+        "campus placement",
+        "top companies visiting",
+        "average package",
+        "highest package",
+        "training and placement cell",
+        "job opportunities after bca"
+      ],
+      "responses": [
+        "Training & Placement Cell:\n- Our college maintains an 85%+ placement record for eligible graduates.\n- Top Recruiters: TCS, Infosys, Wipro, Capgemini, Tech Mahindra, Cognizant, and Amazon.\n- Average Salary Package: Rs. 3.5 to 4.2 LPA; Highest Package: Rs. 9.5 LPA.\n- We conduct pre-placement aptitude training, coding workshops, and mock interviews from the 4th semester."
+      ],
+      "suggestions": ["Courses Offered", "Admission Process", "Contact Details"]
+    },
+    {
+      "tag": "sports_events",
+      "patterns": [
+        "sports facilities",
+        "college ground",
+        "gym facilities",
+        "annual fest",
+        "cultural activities",
+        "clubs and committees",
+        "extracurricular activities"
+      ],
+      "responses": [
+        "Campus Life & Sports:\n- Sports: Cricket ground, football turf, basketball court, badminton courts, and an indoor gym.\n- Cultural Activities: Annual Inter-College Fest 'TechnoWave' held every February.\n- Active student clubs: Coding Club, Robotics Society, Photography Club, NSS, and Rotaract."
+      ],
+      "suggestions": ["Hostel Facilities", "Courses Offered", "Contact Details"]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "college contact number",
+        "how to reach college",
+        "college address",
+        "email address",
+        "admission helpline",
+        "principal office contact",
+        "where is the college located"
+      ],
+      "responses": [
+        "College Contact Information:\n- Campus Address: Apex Institute of Technology & Science, Knowledge Park, Sector 4, City Campus - 560001.\n- Admission Helpline: +91 98765 43210 / +91 80 2345 6789\n- Email: admissions@apexinstitute.edu.in | info@apexinstitute.edu.in\n- Nearest Metro/Bus Station: Central Station (1.5 km away)."
+      ],
+      "suggestions": ["College Timings", "Admission Process", "Courses Offered"]
+    }
+  ],
+  "fallback_responses": [
+    "I'm sorry, I couldn't find an exact answer for your question. You can try asking about admissions, courses, fees, exams, hostel, or contact details.",
+    "I didn't quite catch that. Could you please rephrase your query? Alternatively, you can choose from the suggested topics below or contact the admission office at +91 98765 43210."
+  ]
+}
+
